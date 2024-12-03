@@ -18,9 +18,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *    - Example: `http://localhost:8080/assignments/1`
  *    - Replace `1` with a valid employee ID (until '20') to view their personalized onboarding assignments.
  *
+ * Or you can basically go to 'https://onboarding-solution.onrender.com/assignments/1' and increase the employee ID
+ *
  * Key Note:
  * - This project is built using Java 17.
- * - Ensure PostgreSQL is running, and the database connection is configured correctly in `application.properties`.
+ * - The project now uses an embedded database with H2 database and
+ *   pulls data directly from the 'data.sql' file when the application runs.
+ *   You can check configured database connection settings in `application.properties`.
+ *   Considering data privacy, I only return necessary information.
+ *   But if you want to check employees' other personal information,
+ *   you can check it via 'http://localhost:8080/h2-console' after running the application
+ *   or simply look at the 'data.sql' file.
  *
  * You can find the sample images of the project at 'src/main/resources/static/images'.
  */

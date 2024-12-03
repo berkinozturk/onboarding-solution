@@ -73,6 +73,20 @@ import java.util.stream.Stream;
  * Efficiency: Repository methods apply filtering at the database level, reducing memory consumption and improving performance across the system.
  * Personalization: The service balances general onboarding tasks with specific assignments, emphasizing training modules that are critical for
  * the employee’s role and experience level. This creates a unique and personalized onboarding experience.
+ *
+ * In summary, tasks and training modules in the database are automatically assigned to employees.
+ * Data privacy is ensured by returning only the necessary information of employees with dto's (data transfer object).
+ * Since all new employees have some general tasks to take during the onboarding process and these are important,
+ * 'priority task' is written next to them.
+ * In training modules, employees first see the training modules for their own level and then see personalized lower level suggestions
+ * for them in case they want to refresh their knowledge.
+ * In order to have a realistic scenario, we only assign trainings below 1 level as recommendations.
+ * If the employee has a training module 2 or lower than their own level, it is not displayed for that employee.
+ * Employees state that the training modules at their own level are specifically recommended as 'priority training'.
+ * In this way, the suggestions are personalized according to the departments, roles and experience levels of all employees.
+ * There are different tasks and trainings for people in the same department but in different roles.
+ * At the same time, tasks and trainings vary according to each person's experience level.
+ * In this way, I add even more depth to personalization.
  */
 
 @Service
