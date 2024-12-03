@@ -1,6 +1,7 @@
-TRUNCATE TABLE training_module RESTART IDENTITY CASCADE;
-TRUNCATE TABLE task RESTART IDENTITY CASCADE;
-TRUNCATE TABLE employee RESTART IDENTITY CASCADE;
+
+TRUNCATE TABLE employee;
+TRUNCATE TABLE task;
+TRUNCATE TABLE training_module;
 
 INSERT INTO employee (first_name, last_name, email, phone, gender, date_of_birth, nationality, role, department, experience_level) VALUES
                                                                                                                                        -- IT Department

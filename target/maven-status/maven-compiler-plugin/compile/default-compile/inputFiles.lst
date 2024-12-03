@@ -1,0 +1,14 @@
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/OnboardingSystemApplication.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/controller/AssignmentController.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/dto/AssignmentResponseDTO.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/dto/EmployeeDTO.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/dto/TaskDTO.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/dto/TrainingModuleDTO.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/model/Employee.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/model/Task.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/model/TrainingModule.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/repository/EmployeeRepository.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/repository/TaskRepository.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/repository/TrainingModuleRepository.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/service/AssignmentService.java
+/Users/berkinozturk/Desktop/onboarding-solution/src/main/java/com/example/onboarding_system/service/EmployeeService.java

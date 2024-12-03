@@ -1,0 +1,14 @@
+com/example/onboarding_system/repository/TaskRepository.class
+com/example/onboarding_system/repository/TrainingModuleRepository.class
+com/example/onboarding_system/model/TrainingModule.class
+com/example/onboarding_system/repository/EmployeeRepository.class
+com/example/onboarding_system/service/AssignmentService.class
+com/example/onboarding_system/service/EmployeeService.class
+com/example/onboarding_system/dto/EmployeeDTO.class
+com/example/onboarding_system/dto/TaskDTO.class
+com/example/onboarding_system/model/Employee.class
+com/example/onboarding_system/OnboardingSystemApplication.class
+com/example/onboarding_system/model/Task.class
+com/example/onboarding_system/dto/AssignmentResponseDTO.class
+com/example/onboarding_system/controller/AssignmentController.class
+com/example/onboarding_system/dto/TrainingModuleDTO.class

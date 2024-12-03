@@ -1,9 +1,5 @@
 package com.example.onboarding_system.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * EmployeeDTO:
  *
@@ -21,16 +17,52 @@ import lombok.Setter;
  */
 
 
-@AllArgsConstructor
-@Getter
-@Setter
 public class EmployeeDTO {
     private String firstName;
     private String role;
     private String department;
     private int experienceLevel;
 
+    public EmployeeDTO(String firstName, String role, String department, int experienceLevel) {
+        this.firstName = firstName;
+        this.role = role;
+        this.department = department;
+        this.experienceLevel = experienceLevel;
+    }
+
+    public EmployeeDTO() {
+    }
 
 
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public int getExperienceLevel() {
+        return experienceLevel;
+    }
+
+    public void setExperienceLevel(int experienceLevel) {
+        this.experienceLevel = experienceLevel;
+    }
 }

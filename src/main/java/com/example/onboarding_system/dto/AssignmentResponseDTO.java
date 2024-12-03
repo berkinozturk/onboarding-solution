@@ -1,9 +1,6 @@
 package com.example.onboarding_system.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+
 import java.util.List;
 
 /**
@@ -20,11 +17,31 @@ import java.util.List;
  */
 
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
 public class AssignmentResponseDTO {
     private List<TaskDTO> tasks;
     private List<TrainingModuleDTO> trainingModules;
+
+    public AssignmentResponseDTO(List<TaskDTO> tasks, List<TrainingModuleDTO> trainingModules) {
+        this.tasks = tasks;
+        this.trainingModules = trainingModules;
+    }
+
+    public AssignmentResponseDTO() {
+    }
+
+    public List<TaskDTO> getTasks() {
+        return tasks;
+    }
+
+    public void setTasks(List<TaskDTO> tasks) {
+        this.tasks = tasks;
+    }
+
+    public List<TrainingModuleDTO> getTrainingModules() {
+        return trainingModules;
+    }
+
+    public void setTrainingModules(List<TrainingModuleDTO> trainingModules) {
+        this.trainingModules = trainingModules;
+    }
 }

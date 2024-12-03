@@ -1,8 +1,6 @@
 package com.example.onboarding_system.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+
 
 /**
  * TrainingModuleDTO:
@@ -21,12 +19,48 @@ import lombok.Setter;
  */
 
 
-@AllArgsConstructor
-@Getter
-@Setter
 public class TrainingModuleDTO {
     private String name;
     private String description;
     private int requiredExperienceLevel;
     private boolean isCritical;
+
+    public TrainingModuleDTO(String name, String description, int requiredExperienceLevel, boolean isCritical) {
+        this.name = name;
+        this.description = description;
+        this.requiredExperienceLevel = requiredExperienceLevel;
+        this.isCritical = isCritical;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getRequiredExperienceLevel() {
+        return requiredExperienceLevel;
+    }
+
+    public void setRequiredExperienceLevel(int requiredExperienceLevel) {
+        this.requiredExperienceLevel = requiredExperienceLevel;
+    }
+
+    public boolean isCritical() {
+        return isCritical;
+    }
+
+    public void setCritical(boolean critical) {
+        isCritical = critical;
+    }
 }

@@ -1,6 +1,5 @@
 package com.example.onboarding_system.dto;
 
-import lombok.*;
 
 /**
  * TaskDTO:
@@ -20,13 +19,58 @@ import lombok.*;
  */
 
 
-@AllArgsConstructor
-@Getter
-@Setter
 public class TaskDTO {
     private String name;
     private String description;
     private int requiredExperienceLevel;
     private boolean isCritical;
     private boolean isGeneral;
+
+    public TaskDTO(String name, String description, int requiredExperienceLevel, boolean isCritical, boolean isGeneral) {
+        this.name = name;
+        this.description = description;
+        this.requiredExperienceLevel = requiredExperienceLevel;
+        this.isCritical = isCritical;
+        this.isGeneral = isGeneral;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getRequiredExperienceLevel() {
+        return requiredExperienceLevel;
+    }
+
+    public void setRequiredExperienceLevel(int requiredExperienceLevel) {
+        this.requiredExperienceLevel = requiredExperienceLevel;
+    }
+
+    public boolean isCritical() {
+        return isCritical;
+    }
+
+    public void setCritical(boolean critical) {
+        isCritical = critical;
+    }
+
+    public boolean isGeneral() {
+        return isGeneral;
+    }
+
+    public void setGeneral(boolean general) {
+        isGeneral = general;
+    }
 }
