@@ -1,22 +1,25 @@
 # Base image for Java
-FROM openjdk:17-jdk-slim
+FROM maven:3.8.5-openjdk-17 AS build
 
-# Install Maven
-RUN apt-get update && apt-get install -y maven
-
-# Set working directory
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy Maven project files
+# Copy the source code into the container
 COPY . .
 
-# Build the application using Maven
-RUN mvn clean package
+# Build the project using Maven
+RUN mvn clean package -DskipTests
 
-# Copy the built JAR to the container
-COPY target/onboarding-tool-0.0.1-SNAPSHOT.jar app.jar
+# Use a slim JDK for running the application
+FROM openjdk:17-jdk-slim
 
-# Expose the application port
+# Set the working directory
+WORKDIR /app
+
+# Copy the built JAR file from the build stage
+COPY --from=build /app/target/onboarding-tool-0.0.1-SNAPSHOT.jar app.jar
+
+# Expose the port your app runs on
 EXPOSE 8080
 
 # Command to run the application
